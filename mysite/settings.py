@@ -25,7 +25,7 @@ SECRET_KEY = '7&p$1a@*9e2-=q-3db$dkqi%ef_6m1u)cr07gimvn2i#8&ee7x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '<sirkku>.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'sirkku.pythonanywhere.com']
 
 
 # Application definition
