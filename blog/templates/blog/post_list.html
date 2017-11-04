@@ -43,13 +43,15 @@ paranemisesta Finola-öljyn käytön aloittamisen jälkeen.</p>
 <div>
            <h1><a href="/">Linnunradan tilan blogi</a></h1>
        </div>
-
        <div>
-           <p>published: 4.11.2017</p>
-           <h2><a href="">Ensimmäinen blogikirjoitukseni</a></h2>
-           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-       </div>
-
+         {% for post in posts %}
+         <div>
+           <p>published: {{ post.published_date }}</p>
+           <h1><a href="">{{ post.title }}</a></h1>
+           <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+            {% endfor %}
+      </div)
        <div>
            <p>published: 14.06.2014, 12:14</p>
            <h2><a href="">Toinen blogikirjoitukseni</a></h2>
